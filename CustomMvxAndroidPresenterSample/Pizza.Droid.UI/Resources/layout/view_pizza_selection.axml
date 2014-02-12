@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a pizza"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#ff0e00ff" />
+    <Button
+        android:text="Margherita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click MClickCommand"
+        android:textColor="#ffff0000" />
+    <Button
+        android:text="Funghi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click FClickCommand" />
+    <Button
+        android:text="Pepperoni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click PClickCommand"
+        android:textColor="#ff008b2b" />
+</LinearLayout>
